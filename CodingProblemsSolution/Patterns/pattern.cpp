@@ -1,64 +1,76 @@
 #include <iostream>
 using namespace std;
 
-
+// Q1
 void pat1(int n){
+   // triangle
   for(int i=0; i <n; i++){
     for(int j=0; j<=i; j++){
       cout << "*";
-    } // triangle
+    }
     cout << endl;
   }
 
 }
 
+// Q2
 void pat2(int n){
+  // number triangle
   for(int i=1; i<=n; i++){
     for(int j=1; j<=i; j++){
       cout << j;
-    } // number triangle
+    } 
     cout << endl;
   }
 
 }
 
+// Q3
 void pat3(int n){
+  // number triangle but every row has number similar to the i
   for(int i=1; i<=n; i++){
     for(int j=1; j<=i; j++){
       cout << i;
-    } // number triangle but every row has number similar to the i
+    } 
     cout << endl;
   }
 }
 
+// Q4
 void pat4(int n){
+  // reverse triangle
   for(int i=1; i<=n; i++){
     for(int j= 0; j<n-i+1; j++){
       cout << "*";
-    } // reverse triangle
+    } 
   cout << endl;
   }
 }
 
+// Q5
 void pat5(int n){
+  // reverse triangle number
   for(int i=1; i<=n; i++){
     for(int j= 1; j<=n-i+1; j++){
       cout << j;
-    } // reverse triangle number
+    } 
   cout << endl;
   }
 }
 
+// Q6 
 void pat6(int n){
+  // reverse number triangle
   for(int i=1; i<=n; i++){
     for(int j= 1; j<=n-i+1; j++){
       cout << j;
     }
   cout << endl;
   }
-// reverse number triangle
+
 }
 
+//Q7
 void pat7(int n){
    // pyramid 
 
@@ -81,6 +93,7 @@ void pat7(int n){
 
 }
 
+// Q8
 void pat8(int n){
    //  reverse pyramid 
 
@@ -103,6 +116,7 @@ void pat8(int n){
 
 }
 
+// Q10
 void pat10(int n){
 // side pyramid
   for(int i=1; i<=2*n-1; i++){
@@ -139,6 +153,7 @@ void pat10b(int n){
   }
 }
 
+// Q11
 void pat11(int n){
   int start= 1;
   for(int i=0; i<n;i++){
@@ -153,6 +168,7 @@ void pat11(int n){
 }
 }
 
+// Q12
 void pat12(int n){
   // number traingle something
   for(int i=0; i<n;i++){
@@ -174,6 +190,7 @@ void pat12(int n){
 }
 }
 
+// Q13
 void pat13(int n) {
   // abcd traingle
   char ch = 'A';
@@ -186,6 +203,7 @@ void pat13(int n) {
   }
 }
 
+// Q14
 void pat14(int n) {
   // reverse abc traingle
   char ch = 'A';
@@ -198,6 +216,7 @@ void pat14(int n) {
   }
 }
 
+// Q15
 void pat15(int n) {
   // abcd triangle with same alphabet in row
   char ch = 'A';
@@ -210,6 +229,7 @@ void pat15(int n) {
   }
 }
 
+// Q16
 void pat16(int n) {
   //pyramid abcd
   
@@ -236,6 +256,7 @@ void pat16(int n) {
   
 }
 
+// Q17
 void pat17(int n) {
   // triangle starts with E
   
@@ -247,6 +268,7 @@ void pat17(int n) {
   }
 }
 
+// Q18
 void pat18(int n){
   
   // diamond pattern inside square
@@ -291,6 +313,7 @@ void pat18(int n){
 
 }
 
+// Q19
 void pat19(int n){
   //butterfly pattern
 
@@ -332,15 +355,9 @@ void pat19(int n){
     }
   cout << endl;
   }
-
-
-
-
-
-
-
 }
 
+// Q20
 void pat20(int n){
   // square
   for(int i=0; i<n; i++){
@@ -355,6 +372,7 @@ void pat20(int n){
   }
 }
 
+// Q21
 void pat21(int n){
   // square with outer number different and inner number
   for(int i=0; i<2*n-1; i++){
