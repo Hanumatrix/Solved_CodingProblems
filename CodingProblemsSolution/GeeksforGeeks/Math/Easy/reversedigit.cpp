@@ -7,7 +7,7 @@ void reversedigit(int num)
     while (num > 0)
     {
         int digit = num % 10;
-        reverse = (reverse * 10) + digit;
+        reverse = reverse * 10 + digit;
         num = num / 10;
     }
     cout << "The reverse number is: " << reverse;
